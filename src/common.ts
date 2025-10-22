@@ -31,11 +31,12 @@ async function asyncAwaitExample() {
 
     console.log("[ASYNC/AWAIT] Both requests completed sequentially!");
 
-    const [w, n] = await Promise.all([
+    const [w,n] = await Promise.all([
       httpGetAsync(weatherURL),
       httpGetAsync(newsURL),
     ]);
     console.log("[ASYNC/AWAIT] Promise.all(): Both requests done together!");
+    console.log(`${w} and ${n}`);
 
     const fastest = await Promise.race([
       httpGetAsync(weatherURL),
@@ -80,6 +81,9 @@ function promiseExample() {
     );
 }
 
-// asyncAwaitExample()
+asyncAwaitExample()
 // promiseExample()
-callbackExample()
+// callbackExample()
+
+
+// Note that i could not display the results in the console because it is not easy to read when they are displayed
