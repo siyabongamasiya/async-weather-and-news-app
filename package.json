@@ -2,10 +2,10 @@
   "name": "async-weather-and-news-app",
   "version": "1.0.0",
   "description": "",
-  "main": "asyncAwaitVersion.js",
+  "main": "common.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon --watch src --ext ts --exec \"tsc && node dist/asyncAwaitVersion.js\""
+    "dev": "nodemon --watch src --ext ts --exec \"tsc && node dist/common.js\""
 
   },
   "keywords": [],
